@@ -1,0 +1,129 @@
+                                               COBRANCA INTEGRADA BB - 00018
+                             TROCA DE INFORMACOES EM MEIO ELETRONICO - 00008
+                                                   QUADROS E TABELAS - 99993
+                    CALCULO DE DIGITOS VERIFICADORES/MODULOS 11 E 10 - 00004
+      ----------------------------------------------------------------------
+
+      Nota..	Rotina fornecida aos clientes das carteiras 16, 17 e 18,
+             para impressao de fichamentos e montagem de arquivos-
+             remessa.
+
+
+                             MODULO 11
+
+      01. Este modulo eh utilizado para montagem dos campos nosso
+          numero, codigo do cedente e prefixo da agencia.
+
+      02. Multiplique cada algarismo que compoe o numero pelo seu
+          respectivo peso.
+
+      03. Os pesos variam de 9 a 2. O primeiro digito, da direita para
+          a esquerda, eh multiplicado por 9, o segundo por 8 e assim
+          sucessivamente.
+
+      04. Some os resultados das multiplicacoes.
+
+      05. Divida o total da soma por 11..
+          a/ para calculo do nosso numero, codigo do cedente e prefixo
+             de agencia a ser impresso no fichamento, o resto da
+             divisao eh o digito.
+             Obs.. Se o DV eh igual a 10, o digito eh /X/.,
+
+      06. Exemplo de calculo do DV do numero 01129004590..
+      MULTIPLICANDO
+      0  1  1  2  9  0  0  4  5  9  0 - NOSSO NUMERO
+      x  x  x  x  x  x  x  x  x  x  x
+      7  8  9  2  3  4  5  6  7  8  9 - Pesos
+      .  .  .  .  .  .  .  .  .  .  ...  0
+      .  .  .  .  .  .  .  .  .  ...... 72
+      .  .  .  .  .  .  .  .  ......... 35       S
+      .  .  .  .  .  .  .  ............ 24       O
+      .  .  .  .  .  .  ...............  0       M
+      .  .  .  .  .  ..................  0       A
+      .  .  .  .  ..................... 27       N
+      .  .  .  ........................  4       D
+      .  .  ...........................  9       O
+      .  ..............................  8
+      .................................  0
+                                       ---
+      DIVIDINDO                        179 por 11 /IGUAL/ 16
+
+      Nosso numero.. RESTO /DV/ eh 3
+
+      Codigo de barras.. 11-3 /IGUAL/ 8 - DV eh 8
+
+
+     
+
+
+                                  	 MODULO 10 
+                                        ===========
+
+
+      11.  Eh utilizado para calcular o dv dos tres primeiros campos da
+           linha digitavel
+      ----------------------------------------------------------------------
+      AREA  003/0018-19980679, DE 09.03.1998                       0001/0002
+      IMPRESSO EM 14-DEC-2001, 12:27:45, POR F6765220-MARCELO
+                                               COBRANCA INTEGRADA BB - 00018
+                             TROCA DE INFORMACOES EM MEIO ELETRONICO - 00008
+                                                   QUADROS E TABELAS - 99993
+                    CALCULO DE DIGITOS VERIFICADORES/MODULOS 11 E 10 - 00004
+      ----------------------------------------------------------------------
+
+
+      12.  Os pesos variam entre 2 e 1. O primeiro digito, da direita
+           para a esquerda, eh multiplicado por 2, o segundo por 1
+           /alternadamente/.,
+
+      13. Multiplique cada algarismo que compoe o numero pelo seu
+          respectivo peso.
+          Obs.. Caso o resultado da multiplicacao seja maior que 9,
+                deverao ser somados os algarismos do produto, ateh
+                reduzi-lo a um unico algarismo.
+
+      14. Some os resultados obtidos.
+
+      15. Subtraia o total apurado da dezena imediatamente superior ao
+          total apurado /soma igual a 25, subtraia 30-25/. Se o
+          resultado for igual a 10, o DV eh /zero/.
+
+      16. Exemplo de calculo do DV do numero 29004590..
+
+      MULTIPLICANDO
+      2  9  0  0  4  5  9  0 - NOSSO NUMERO
+      x  x  x  x  x  x  x  x
+      1  2  1  2  1  2  1  2 - Pesos
+      .  .  .  .  .  .  .  .
+      .  .  .  .  .  .  .  .
+      .  .  .  .  .  .  .  .
+      .  .  .  .  .  .  .  ............  0 ............... 0
+      .  .  .  .  .  .  ...............  9 ............... 9
+      .  .  .  .  .  .................. 10 /1+0/IGUAL/ 1/. 1
+      .  .  .  .  .....................  4 ............... 4
+      .  .  .  ........................  0 ............... 0
+      .  .  ...........................  0 ............... 0
+      .  .............................. 18 /1+8/IGUAL/ 9/. 9
+      .................................  2 ............... 2
+                                                         ---
+                                                          25
+      SUBTRAINDO             30-25 /IGUAL/ 5 - /DV/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ----------------------------------------------------------------------
+      AREA  003/0018-19980679, DE 09.03.1998                       0002/0002
+      IMPRESSO EM 14-DEC-2001, 12:27:45, POR F6765220-MARCELO      IMPRESSO EM 14-DEC-2001, 12:27:45, POR F6765220-MARCELO

@@ -1,0 +1,24 @@
+Segmento P (posição 38 a 57) - Nosso número
+
+------------------------------------------------------------------------------------
+Nosso número com 17 posições (apenas carteira 18) - arquivo retorno
+17 posições livres.
+Não tem dígito verificador
+Demais campos vêem preenchidos com brancos
+------------------------------------------------------------------------------------
+Nosso número com 11 posições
+6 primeiras posições preenchidas com o número do convênio e as outras 5 são livres;
+Acrescentar o dígito verificador na posição 12
+	*O dígito verificador é calculado pelo módulo 11
+Demais campos, preencher com brancos (a direita)
+------------------------------------------------------------------------------------
+Convênios de sete posições, numeração superior a 1.000.000 (um 
+       milhão):                                                       
+       I      - CCCCCCCNNNNNNNNNN                                     
+                OBS: Não existe DV - Dígito Verificador - na          
+                     composição do nosso-número para convênios de sete
+                     posições, superior a 1.000.000.                  
+                                                                      
+       OBS:  "C" - Número do convênio atribuido pelo Sistema Cobrança 
+             "N" - Sequêncial atribuido pelo cliente ou sistema       
+                  Cobrança                                            

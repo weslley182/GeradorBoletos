@@ -1,0 +1,63 @@
+package packBoleto7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dbrtl,
+  vcl,
+  vcljpg,
+  dsnap,
+  FR7;
+
+contains
+  Titulo in 'units\Titulo.pas',
+  Endereco in 'units\Endereco.pas',
+  Pessoa in 'units\Pessoa.pas',
+  Banco in 'units\Banco.pas',
+  Cedente in 'units\Cedente.pas',
+  FactoryBanco in 'units\FactoryBanco.pas',
+  Banco001 in 'units\bancos\Banco001.pas',
+  Banco104 in 'units\bancos\Banco104.pas',
+  uFuncoes in 'units\uFuncoes.pas',
+  Boletos in 'units\Boletos.pas',
+  LCBase in 'units\LCBase.pas',
+  ListaTitulos in 'units\ListaTitulos.pas',
+  uDadosComplementares in 'units\uDadosComplementares.pas',
+  Cnab240 in 'units\arquivos\Cnab240.pas',
+  Arquivo in 'units\Arquivo.pas',
+  BBCnab240 in 'units\arquivos\BBCnab240.pas',
+  FactoryArquivo in 'units\FactoryArquivo.pas',
+  FactoryArquivoBB in 'units\arquivos\FactoryArquivoBB.pas',
+  CaixaCnab240 in 'units\arquivos\CaixaCnab240.pas',
+  BradescoCnab400 in 'units\arquivos\BradescoCnab400.pas',
+  Cnab400 in 'units\arquivos\Cnab400.pas',
+  Banco237 in 'units\bancos\Banco237.pas',
+  FactoryArquivoCaixa in 'units\arquivos\FactoryArquivoCaixa.pas',
+  FactoryArquivoBradesco in 'units\arquivos\FactoryArquivoBradesco.pas',
+  udmLCBoletos in 'units\DataModule\udmLCBoletos.pas' {dmLCBoletos: TDataModule},
+  DadoFormatado in 'units\DadoFormatado.pas';
+
+end.
